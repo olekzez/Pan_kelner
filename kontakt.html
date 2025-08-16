@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang='pl'>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt | Pan Kelner – szkolenia dla restauracji</title>
+  <meta name="description" content="Skontaktuj się z Panem Kelnerem." />
+  <link rel="canonical" href="https://www.przyklad-pan-kelner.pl/kontakt.html" />
+  <meta name="theme-color" content="#0b0b0f" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: '#d73fc6', blackRich: '#0b0b0f', whiteWarm: '#f7f7fb' },
+          boxShadow: { soft: '0 10px 30px rgba(0,0,0,.15)' }
+        }
+      }
+    }
+  </script>
+  <style>:root{--brand:#d73fc6;--black:#0b0b0f;--white:#f7f7fb}</style>
+  <script defer src="assets/main.js"></script>
+
+  <script type='application/ld+json'>{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.przyklad-pan-kelner.pl/"}, {"@type": "ListItem", "position": 2, "name": "Kontakt", "item": "https://www.przyklad-pan-kelner.pl/kontakt.html"}]}</script>
+  <script type='application/ld+json'>{"@context": "https://schema.org", "@type": "ContactPage", "name": "Kontakt – Pan Kelner", "url": "https://www.przyklad-pan-kelner.pl/kontakt.html"}</script>
+</head>
+<body class='bg-blackRich text-whiteWarm'>
+<a class='sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-brand text-black px-3 py-2 rounded' href='#start'>Przejdź do treści</a>
+  <header class="sticky top-0 z-50 backdrop-blur bg-blackRich/70 border-b border-white/10" role="banner" aria-label="Główna nawigacja">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="inline-flex items-center gap-2 font-bold text-white" aria-label="Pan Kelner – strona główna">
+        <span class="w-3 h-3 rounded-full bg-brand shadow-[0_0_0_6px_rgba(215,63,198,0.4)]"></span>
+        <span>Pan Kelner</span>
+      </a>
+      <nav class="flex gap-3">
+        <a class="px-3 py-2 rounded-full text-white hover:bg-brand/20" href="index.html">Strona główna</a>
+        <a class="px-3 py-2 rounded-full text-white hover:bg-brand/20" href="o-nas.html">O nas</a>
+        <a class="px-3 py-2 rounded-full text-white hover:bg-brand/20" href="szkolenia.html">Szkolenia</a>
+        <a class="px-3 py-2 rounded-full text-white hover:bg-brand/20" href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+  <main id="start" class="max-w-6xl mx-auto px-4 py-12">
+    <h1 class="text-3xl md:text-4xl font-bold mb-2">Kontakt</h1>
+    <div class="grid md:grid-cols-2 gap-6">
+      <form name="contact" method="post" action="https://formsubmit.co" aria-describedby="contact-help" class="grid gap-3">
+        <label class="font-semibold" for="name">Imię i nazwisko</label>
+        <input class="rounded-xl border border-white/20 bg-white/5 px-4 py-3 text-white" id="name" name="name" autocomplete="name" required />
+        <label class="font-semibold" for="email">E‑mail</label>
+        <input class="rounded-xl border border-white/20 bg-white/5 px-4 py-3 text-white" id="email" type="email" name="email" autocomplete="email" required />
+        <label class="font-semibold" for="message">Wiadomość</label>
+        <textarea class="rounded-xl border border-white/20 bg-white/5 px-4 py-3 text-white min-h-[120px]" id="message" name="message" placeholder="Napisz, czego potrzebuje Twój zespół…" required></textarea>
+        <button class="inline-flex items-center gap-2 px-4 py-3 rounded-xl font-bold bg-brand text-black shadow-soft w-max" type="submit">Wyślij</button>
+        <p id="contact-help" class="text-sm text-white/60">Klikając „Wyślij”, zgadzasz się na kontakt w celu przedstawienia oferty.</p>
+      </form>
+      <aside>
+        <div class="rounded-2xl border border-white/20 bg-white/5 p-4 shadow-soft">
+          <h3 class="font-semibold text-white mb-2">Dane kontaktowe</h3>
+          <p><strong>E‑mail:</strong> <a class="text-brand hover:underline" href="mailto:kontakt@twojkelner.pl">kontakt@twojkelner.pl</a><br>
+             <strong>Telefon:</strong> <a class="text-brand hover:underline" href="tel:+48600000000">+48 600 000 000</a><br>
+             <strong>Obsługiwany obszar:</strong> cała Polska / online</p>
+          <p class="text-sm text-white/60">Preferuję kontakt mailowy – zwykle odpisuję tego samego dnia roboczego.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer class="border-t border-white/10 bg-blackRich" role="contentinfo">
+    <div class="max-w-6xl mx-auto px-4 py-4 text-sm text-white/60 flex items-center justify-between">
+      <div>© <span id="year">2025</span> Pan Kelner. Wszelkie prawa zastrzeżone.</div>
+      <div class="space-x-2">
+        <a class="hover:text-brand" href="o-nas.html">O nas</a>
+        <span>•</span>
+        <a class="hover:text-brand" href="szkolenia.html">Szkolenia</a>
+        <span>•</span>
+        <a class="hover:text-brand" href="kontakt.html">Kontakt</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
